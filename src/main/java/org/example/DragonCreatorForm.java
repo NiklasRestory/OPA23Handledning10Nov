@@ -16,7 +16,7 @@ public class DragonCreatorForm {
     private JButton submitDragonButton;
     private JList dragonJList;
     private DefaultListModel dragonListModel = new DefaultListModel();
-    private JButton removeDragonButton;
+    private JButton flyDragonButton;
 
     private JPanel dragonCreatorPanel;
 
@@ -89,6 +89,17 @@ public class DragonCreatorForm {
                     wingspanField.setText(dragon.getWingspan() + "");
                     colorField.setText(dragon.getColor());
                     gasLevelField.setText(dragon.getGasLevel() + "");
+                }
+            }
+        });
+        flyDragonButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int index = dragonJList.getSelectedIndex();
+                if (index >= 0) {
+                    Dragon dragon = dragonList.get(index);
+
+                    FlyDragonForm flyDragonForm = new FlyDragonForm(dragon);
                 }
             }
         });

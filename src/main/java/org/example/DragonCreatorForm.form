@@ -124,12 +124,12 @@
           <text value="Submit"/>
         </properties>
       </component>
-      <component id="23a29" class="javax.swing.JButton" binding="removeDragonButton">
+      <component id="23a29" class="javax.swing.JButton" binding="flyDragonButton">
         <constraints>
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Remove"/>
+          <text value="Fly"/>
         </properties>
       </component>
     </children>
