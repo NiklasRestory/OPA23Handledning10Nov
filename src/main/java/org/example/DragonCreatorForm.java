@@ -10,6 +10,18 @@ public class DragonCreatorForm {
     private JTextField gasLevelField;
     private JButton submitDragonButton;
     private JList dragonList;
-    private JPanel dragonCreatorPanel;
     private JButton removeDragonButton;
+
+    private JPanel dragonCreatorPanel;
+    private JFrame jFrame = new JFrame("Dragon Creator");
+    public DragonCreatorForm() {
+        jFrame.setSize(400, 400);
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jFrame.setLocationRelativeTo(null);
+        jFrame.setContentPane(dragonCreatorPanel);
+        jFrame.setVisible(true);
+
+
+    }
+
 }
